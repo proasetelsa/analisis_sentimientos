@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Análisis de Sentimientos PROASETEL</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+
+<h3>Su comentario:</h3>
+<div>{{ content }}</div>
+
+<h3>Análisis:</h3>
+<div>Este comentario es <strong>{{ prediction }}</strong>
+</div>
+
+<br></br>
+
+<div id='button'>
+	  <form action="/">
+	    <input type=submit value='Enviar otro comentario'>
+	  </form>
+</div>
+  </body>
+</html>
